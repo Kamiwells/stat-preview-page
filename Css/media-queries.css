@@ -1,0 +1,33 @@
+/* Desktop */
+@media (min-width:64rem) {
+    .stat-preview-card {
+        display: flex;
+        flex-direction: row-reverse;
+        }
+    
+    .stat-hero-img {
+        background: url(Images/image-header-desktop.jpg);
+        width: 55rem;
+        height: 45rem;
+        background-position: center;
+        background-size: cover;
+        border-radius: .7rem .7rem 0 0;
+        }
+    
+    .stat-preview-write-up {
+        text-align: left;
+        width: 50rem;
+        padding: 3rem 3rem 0 3rem;
+
+        }
+    .stat-preview-write-up h1{
+        font-size: 3.6rem;
+        margin-block-end: 3rem;
+    }
+
+    .stat-reviews {
+        margin-block-start: 6rem;
+        display: flex;
+        gap: 5rem;
+        }
+}

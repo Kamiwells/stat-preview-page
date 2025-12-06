@@ -1,0 +1,111 @@
+/* Fonts */
+@font-face {
+    font-family: inter;
+    src: url(Css/Fonts/inter-v20-latin-regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: inter-bold;
+    src: url(Css/Fonts/inter-v20-latin-700.woff2);
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: lexend-deca;
+    src: url(Css/Fonts/lexend-deca-v25-latin-regular.woff2);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+/* Resets */
+html{
+    font-size: 62.5%;
+    /* font-family:'inter', sans-serif; */
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img,
+picture,
+video{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+/* Custom Properties */
+:root{
+    --Navy-950: hsl(233, 47%, 7%);
+    --Blue-950: hsl(244, 37%, 16%);
+    --Purple-500: hsl(277, 64%, 61%);
+    --Purple-200: hsla(277, 95%, 26%, 0.608);
+    --White-main-heading-stats: hsl(0, 0%, 100%);
+    --White-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --White-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+/* stat preview */
+body{
+    font-family: 'inter', sans-serif;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+    background: var(--Navy-950);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 100svh;
+    min-block-size: 100vh;              /*fall back */
+}
+/* whole card */
+.stat-preview-card{
+    background: var(--Blue-950);
+    max-width: 100rem;
+    margin: 2.5rem;
+    border-radius: .7rem;
+}
+/* hero-img */
+.stat-hero-img{
+    background: url(Images/image-header-mobile.jpg);
+    box-shadow: inset 0 0 0 100rem var(--Purple-200);      /*Overlay*/
+    background-position: center;
+    background-size: cover;
+    border-radius: .7rem .7rem 0 0;
+    max-width: 100rem;
+    height: 23rem;
+}
+/* write-up */
+.stat-preview-write-up{
+    margin: 3.5rem;
+    text-align: center;
+}
+.stat-preview-write-up p{
+    color: var(--White-main-paragraph);
+    line-height: 2.5rem;
+}
+.stat-preview-write-up h1{
+    margin-block-end: 1.5rem;
+    font-size: 2.5rem;
+    font-family: 'inter-bold', sans-serif;
+}
+/* purple text */
+#stat-style{
+    color: var(--Purple-500);
+}
+/* reviews */
+.stat-reviews{
+    margin-block-start: 4rem;
+}
+.stat-reviews .reviews{
+    margin-block-start: 2rem;
+}
+.stat-reviews p{
+    color: var(--White-stat-headings);
+    font-family: 'lexend-deca', sans-serif;
+    margin-block-start: .3rem;
+}
