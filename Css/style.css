@@ -1,21 +1,21 @@
 /* Fonts */
 @font-face {
     font-family: inter;
-    src: url(Css/Fonts/inter-v20-latin-regular.woff2);
+    src: url(Fonts/inter-v20-latin-regular.woff2);
     font-weight: 400;
     font-display: swap;
     font-style: normal;
 }
 @font-face {
     font-family: inter-bold;
-    src: url(Css/Fonts/inter-v20-latin-700.woff2);
+    src: url(Fonts/inter-v20-latin-700.woff2);
     font-weight: 700;
     font-display: swap;
     font-style: normal;
 }
 @font-face {
     font-family: lexend-deca;
-    src: url(Css/Fonts/lexend-deca-v25-latin-regular.woff2);
+    src: url(Fonts/lexend-deca-v25-latin-regular.woff2);
     font-weight: 400;
     font-display: swap;
     font-style: normal;
@@ -23,7 +23,6 @@
 /* Resets */
 html{
     font-size: 62.5%;
-    /* font-family:'inter', sans-serif; */
 }
 *,
 *::after,
